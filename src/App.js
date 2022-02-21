@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header, Footer } from "./components/";
+
+const headerTopLinks = [
+  { name: "Главная", href: "/", underlined: false },
+  { name: "Новости", href: "/news", underlined: false },
+  { name: "Размещение и тарифы", href: "/", underlined: false },
+  { name: "Объявления на карте", href: "/", underlined: true },
+  { name: "Контакты", href: "/", underlined: false },
+];
+const headerBottomLinks = [
+  { name: "Квартиры на сутки", href: "/", underlined: false },
+  { name: "Коттеджи и усадьбы", href: "/news", underlined: false },
+  { name: "Бани и Сауны", href: "/", underlined: false },
+  { name: "Авто напрокат", href: "/", underlined: true },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header linksTop={headerTopLinks} />
+      <Footer />
     </div>
   );
 }
