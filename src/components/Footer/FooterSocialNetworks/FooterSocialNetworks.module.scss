@@ -1,0 +1,21 @@
+.footer__social-networks {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1e2123;
+    margin-right: 25px;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-item {
+    margin-right: 14px;
+  }
+}

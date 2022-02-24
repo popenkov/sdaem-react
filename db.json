@@ -1,0 +1,130 @@
+{
+  "links": {
+    "header": {
+      "headerTop": [
+        {
+          "name": "Главная",
+          "href": "/",
+          "top": true
+        },
+        {
+          "name": "Новости",
+          "href": "/news",
+          "top": true
+        },
+        {
+          "name": "Размещение и тарифы",
+          "href": "/",
+          "top": true
+        },
+        {
+          "name": "Объявления на карте",
+          "href": "/",
+          "underlined": true,
+          "top": true
+        },
+        {
+          "name": "Контакты",
+          "href": "/",
+          "top": true
+        }
+      ],
+      "headerBottom": [
+        {
+          "name": "Квартиры на сутки",
+          "href": "/",
+          "bottom": true,
+          "yellowMap": true
+        },
+        {
+          "name": "Коттеджи и усадьбы",
+          "href": "/news",
+          "bottom": true
+        },
+        {
+          "name": "Бани и Сауны",
+          "href": "/",
+          "bottom": true
+        },
+        {
+          "name": "Авто напрокат",
+          "href": "/",
+          "bottom": true
+        }
+      ]
+    },
+    "footer": {
+      "houseTypesLinks": [
+        {
+          "name": "Коттеджи и усадьбы",
+          "href": "/",
+          "bold": true
+        },
+        {
+          "name": "Бани и сауны",
+          "href": "/",
+          "bold": true
+        },
+        {
+          "name": "Авто на прокат",
+          "href": "/",
+          "bold": true
+        }
+      ],
+      "citiesLinks": [
+        {
+          "name": "Квартиры в Минске",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Квартиры в Витебске",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Квартиры в Гомеле",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Квартиры в Гродно",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Квартиры в Бресте",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Квартиры в Могилеве",
+          "href": "/",
+          "gray": true
+        }
+      ],
+      "otherPagesLinks": [
+        {
+          "name": "Новости",
+          "href": "/news",
+          "gray": true
+        },
+        {
+          "name": "Размещение и тарифы ",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Объявления на карте",
+          "href": "/",
+          "gray": true
+        },
+        {
+          "name": "Контакты",
+          "href": "/",
+          "gray": true
+        }
+      ]
+    }
+  }
+}

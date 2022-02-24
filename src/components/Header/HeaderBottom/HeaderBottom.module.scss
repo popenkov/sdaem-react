@@ -12,6 +12,10 @@
     flex-wrap: wrap;
   }
 
+  &-logo {
+    margin-right: 83px;
+  }
+
   &-list {
     display: flex;
     align-items: center;
@@ -28,16 +32,6 @@
       font-size: 14px;
       line-height: 17px;
       color: #1e2123;
-    }
-  }
-  &-map-icon {
-    margin-left: 17px;
-    fill: #ffd54f;
-    color: #ffd54f;
-    width: 12px;
-    height: 15px;
-    path {
-      fill: #ffd54f;
     }
   }
 

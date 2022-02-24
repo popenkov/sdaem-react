@@ -1,25 +1,28 @@
-import HeaderTopLink from "../HeaderTopLink/HeaderTopLink";
+import LinkComponent from "../../LinkComponent/LinkComponent";
 
 import { ReactComponent as HeartSvg } from "../../../assets/svg/heart-stroke.svg";
 import styles from "./HeaderTop.module.scss";
 
-function HeaderTop({ linksT }) {
-  console.log(linksT);
+function HeaderTop({ linksTop }) {
   return (
     <div className={styles.header__top}>
       <div className={styles["header__top-container"]}>
         <nav className={styles.header__nav}>
           <ul className={styles["header__top-nav-list"]}>
-            {linksT.map((link) => {
-              return (
-                <HeaderTopLink
-                  href={link.href}
-                  name={link.name}
-                  underlined={link.underlined}
-                  key={link.name}
-                />
-              );
-            })}
+            {linksTop &&
+              linksTop.map((link) => {
+                return (
+                  <LinkComponent
+                    href={link.href}
+                    name={link.name}
+                    underlined={link.underlined}
+                    top={link.top}
+                    bottom={link.bottom}
+                    yellowMap={link.yellowMap}
+                    key={link.name}
+                  />
+                );
+              })}
           </ul>
         </nav>
 

@@ -1,23 +1,29 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setHeader } from "./redux/actions/header";
+import { setFooter } from "./redux/actions/footer";
+import axios from "axios";
+import { Route, Routes } from "react-router-dom";
 import { Header, Footer } from "./components/";
-
-const headerTopLinks = [
-  { name: "Главная", href: "/", underlined: false },
-  { name: "Новости", href: "/news", underlined: false },
-  { name: "Размещение и тарифы", href: "/", underlined: false },
-  { name: "Объявления на карте", href: "/", underlined: true },
-  { name: "Контакты", href: "/", underlined: false },
-];
-const headerBottomLinks = [
-  { name: "Квартиры на сутки", href: "/", underlined: false },
-  { name: "Коттеджи и усадьбы", href: "/news", underlined: false },
-  { name: "Бани и Сауны", href: "/", underlined: false },
-  { name: "Авто напрокат", href: "/", underlined: true },
-];
+import { Main, News } from "./pages";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/links").then(({ data }) => {
+      dispatch(setHeader(data.header));
+      dispatch(setFooter(data.footer));
+    });
+  }, []);
+
   return (
     <div className="App">
-      <Header linksTop={headerTopLinks} />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} exact />
+        <Route path="/news" element={<News />} exact />
+      </Routes>
       <Footer />
     </div>
   );

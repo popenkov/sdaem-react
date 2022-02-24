@@ -1,0 +1,39 @@
+.footer__right-top {
+  display: flex;
+  height: 135px;
+}
+
+.footer__house-types-links {
+  width: 15%;
+  min-width: 150px;
+  margin-right: 70px;
+
+  li {
+    margin-bottom: 19px;
+  }
+}
+
+.footer__cities-links {
+  min-width: 437px;
+  width: 45.6%;
+  p {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__other-pages-links {
+  min-width: 300px;
+  width: 20%;
+  li {
+    margin-bottom: 8px;
+  }
+}
