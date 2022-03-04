@@ -1,0 +1,36 @@
+.headerTop {
+  background: #f8f8f8;
+  padding: 11px 0;
+}
+.headerTopContainer {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerUserMenu {
+}
+
+.headerFavourites {
+  margin-left: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8291a3;
+}
+
+.headerLogin {
+  margin-left: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #664ef9;
+}
+
+.headerLogo {
+  margin-right: 84px;
+  height: 19px;
+}

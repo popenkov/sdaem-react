@@ -1,0 +1,23 @@
+.footerContainer {
+  width: 89%;
+  max-width: 1283px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 21px;
+}
+
+.footerRightSide {
+  width: 80%;
+  margin-left: 85px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footerRightBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
