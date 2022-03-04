@@ -1,2 +1,2 @@
-export { default as Main } from "./Main/Main";
-export { default as News } from "./News/News";
+export { default as MainPage } from "./MainPage/MainPage";
+export { default as NewsPage } from "./NewsPage/NewsPage";

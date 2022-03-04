@@ -1,19 +1,20 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setHeader } from "./redux/actions/header";
-import { setFooter } from "./redux/actions/footer";
+import { setFooter, setFooterCopyright } from "./redux/actions/footer";
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 import { Header, Footer } from "./components/";
-import { Main, News } from "./pages";
+import { MainPage, NewsPage } from "./pages";
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/links").then(({ data }) => {
+    axios.get("http://localhost:3001/headerFooter").then(({ data }) => {
       dispatch(setHeader(data.header));
       dispatch(setFooter(data.footer));
+      dispatch(setFooterCopyright(data.footerCopyright));
     });
   }, []);
 
@@ -21,8 +22,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} exact />
-        <Route path="/news" element={<News />} exact />
+        <Route path="/" element={<MainPage />} exact />
+        <Route path="/news" element={<NewsPage />} exact />
       </Routes>
       <Footer />
     </div>

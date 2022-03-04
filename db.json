@@ -1,55 +1,55 @@
 {
-  "links": {
+  "headerFooter": {
     "header": {
       "headerTop": [
         {
           "name": "Главная",
-          "href": "/",
-          "top": true
+          "id": "main",
+          "href": "/"
         },
         {
           "name": "Новости",
-          "href": "/news",
-          "top": true
+          "id": "news",
+          "href": "/news"
         },
         {
           "name": "Размещение и тарифы",
-          "href": "/",
-          "top": true
+          "id": "tarification",
+          "href": "/"
         },
         {
           "name": "Объявления на карте",
+          "id": "adsOnMap",
           "href": "/",
-          "underlined": true,
-          "top": true
+          "underlined": true
         },
         {
           "name": "Контакты",
-          "href": "/",
-          "top": true
+          "id": "contacts",
+          "href": "/"
         }
       ],
       "headerBottom": [
         {
           "name": "Квартиры на сутки",
+          "id": "dayRent",
           "href": "/",
-          "bottom": true,
           "yellowMap": true
         },
         {
           "name": "Коттеджи и усадьбы",
-          "href": "/news",
-          "bottom": true
+          "id": "manor",
+          "href": "/news"
         },
         {
           "name": "Бани и Сауны",
-          "href": "/",
-          "bottom": true
+          "id": "bath",
+          "href": "/"
         },
         {
           "name": "Авто напрокат",
-          "href": "/",
-          "bottom": true
+          "id": "carRent",
+          "href": "/"
         }
       ]
     },
@@ -57,16 +57,19 @@
       "houseTypesLinks": [
         {
           "name": "Коттеджи и усадьбы",
+          "id": "footerManor",
           "href": "/",
           "bold": true
         },
         {
           "name": "Бани и сауны",
+          "id": "footerBath",
           "href": "/",
           "bold": true
         },
         {
           "name": "Авто на прокат",
+          "id": "footerCarRent",
           "href": "/",
           "bold": true
         }
@@ -74,31 +77,37 @@
       "citiesLinks": [
         {
           "name": "Квартиры в Минске",
+          "id": "minskFlats",
           "href": "/",
           "gray": true
         },
         {
           "name": "Квартиры в Витебске",
+          "id": "vitebskFlats",
           "href": "/",
           "gray": true
         },
         {
           "name": "Квартиры в Гомеле",
+          "id": "gomelFlats",
           "href": "/",
           "gray": true
         },
         {
           "name": "Квартиры в Гродно",
+          "id": "grodnoFlats",
           "href": "/",
           "gray": true
         },
         {
           "name": "Квартиры в Бресте",
+          "id": "brestFlats",
           "href": "/",
           "gray": true
         },
         {
           "name": "Квартиры в Могилеве",
+          "id": "mogilevFlats",
           "href": "/",
           "gray": true
         }
@@ -106,25 +115,34 @@
       "otherPagesLinks": [
         {
           "name": "Новости",
+          "id": "footerNews",
           "href": "/news",
           "gray": true
         },
         {
           "name": "Размещение и тарифы ",
+          "id": "footerTarification",
           "href": "/",
           "gray": true
         },
         {
           "name": "Объявления на карте",
+          "id": "footerAdsOnMaps",
           "href": "/",
           "gray": true
         },
         {
           "name": "Контакты",
+          "id": "footerContacts",
           "href": "/",
           "gray": true
         }
       ]
+    },
+
+    "footerCopyright": {
+      "subtitle": "СДАЁМ БАЙ",
+      "copyright": "ИП Шушкевич Андрей Викторович УНП 192602485 Минским горисполкомом 10.02.2016 <br /> 220068, РБ, г. Минск, ул. Осипенко, 21, кв.23 +37 5 29 621 48 33, sdaem@sdaem.by Режим работы: 08:00-22:00"
     }
   }
 }

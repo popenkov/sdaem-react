@@ -2,21 +2,21 @@ import React from "react";
 
 import styles from "./Footer.module.scss";
 
-import FooterCopyright from "./FooterCopyright/FooterCopyright";
-import FooterLinksContainer from "./FooterLinksContainer/FooterLinksContainer";
+import FooterCopyright from "./FooterCopyright/FooterCopyright.tsx";
+import FooterLinksContainer from "./FooterLinksContainer/FooterLinksContainer.tsx";
 import FooterPaymentMethods from "./FooterPaymentMethods/FooterPaymentMethods";
 import FooterSocialNetworks from "./FooterSocialNetworks/FooterSocialNetworks";
 
 function Footer() {
   return (
-    <footer className={styles["footer"]}>
-      <div className={styles["footer__container"]}>
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
         <FooterCopyright />
 
-        <div className={styles["footer__right-side"]}>
+        <div className={styles.footerRightSide}>
           <FooterLinksContainer />
 
-          <div className={styles["footer__right-bottom"]}>
+          <div className={styles.footerRightBottom}>
             <FooterSocialNetworks />
             <FooterPaymentMethods />
           </div>

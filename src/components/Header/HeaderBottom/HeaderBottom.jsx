@@ -1,30 +1,27 @@
 import React from "react";
-import HeaderLink from "../../LinkComponent/LinkComponent";
+import HeaderLink from "../../LinkComponent/LinkComponent.tsx";
 
 import styles from "./HeaderBottom.module.scss";
-import LogoImg from "../../../assets/images/header-logo.png";
+import AddAdvButton from "../../UI/AddAdvButton/AddAdvButton.tsx";
+import Logo from "../../UI/Logo/Logo.tsx";
 
 function HeaderBottom({ linksBottom }) {
   return (
-    <div className={styles.header__bottom}>
-      <div className={styles["header__bottom-container"]}>
-        <img
-          src={LogoImg}
-          alt="Логотип компании"
-          className={styles["header__bottom-logo"]}
-        ></img>
+    <div className={styles.headerBottom}>
+      <div className={styles.headerBottomContainer}>
+        <Logo />
 
-        <ul className={styles["header__bottom-list"]}>
+        <ul className={styles.headerBottomList}>
           {linksBottom &&
             linksBottom.map((link) => {
               return (
                 <li key={link.name}>
                   <HeaderLink
                     href={link.href}
+                    id={link.id}
                     name={link.name}
                     underlined={link.underlined}
-                    top={link.top}
-                    bottom={link.bottom}
+                    bottom={true}
                     yellowMap={link.yellowMap}
                   />
                 </li>
@@ -32,9 +29,8 @@ function HeaderBottom({ linksBottom }) {
             })}
         </ul>
 
-        <a className={styles["header__bottom-add-adv"]}>
-          + Разместить объявление
-        </a>
+        {/* <a className={styles.headerBottomAddAdv}>+ Разместить объявление</a> */}
+        <AddAdvButton />
       </div>
     </div>
   );

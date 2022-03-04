@@ -1,39 +1,40 @@
-.footer__right-top {
+.footerRightTop {
   display: flex;
   height: 135px;
 }
 
-.footer__house-types-links {
+.footerHouseTypeLinks {
   width: 15%;
   min-width: 150px;
   margin-right: 70px;
-
-  li {
-    margin-bottom: 19px;
-  }
+}
+.footerHouseTypeListItem {
+  margin-bottom: 19px;
 }
 
-.footer__cities-links {
+.footerCitiesLinks {
   min-width: 437px;
   width: 45.6%;
-  p {
-    margin-bottom: 10px;
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
 }
 
-.footer__other-pages-links {
+.footerCitiesTitle {
+  margin-bottom: 10px;
+}
+
+.footerCitiesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerCitiesListItem {
+  margin-bottom: 8px;
+}
+
+.footerOtherPagesLinks {
   min-width: 300px;
   width: 20%;
-  li {
-    margin-bottom: 8px;
-  }
+}
+
+.footerOtherPagesListItem {
+  margin-bottom: 8px;
 }

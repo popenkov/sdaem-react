@@ -6,7 +6,7 @@ function Header() {
   const headerLinks = useSelector(({ header }) => header.header);
   return (
     <header>
-      <HeaderTop linksTop={headerLinks.headerTop} />
+      <HeaderTop />
       <HeaderBottom linksBottom={headerLinks.headerBottom} />
     </header>
   );

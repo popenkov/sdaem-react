@@ -1,15 +1,20 @@
 const initialState = {
-  footer: [],
+  footerLinksList: [],
+  footerCopyright: {},
 };
 
-const footer = (state = initialState, action) => {
-  switch (action.type) {
+const footer = (state = initialState, { type, payload }) => {
+  switch (type) {
     case "SET_FOOTER":
       return {
         ...state,
-        footer: action.payload,
+        footerLinksList: payload,
       };
-
+    case "SET_FOOTER_COPYRIGHT":
+      return {
+        ...state,
+        footerCopyright: payload,
+      };
     default:
       return state;
   }

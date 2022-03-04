@@ -1,19 +1,19 @@
-.footer__left-side {
+.footerLeftSide {
   width: 20%;
 }
 
-.footer__logo {
+.footerLogo {
   margin-bottom: 7px;
-  &-subtitle {
-    margin-bottom: 36px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: #8291a3;
-  }
+}
+.footerLogoSubtitle {
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8291a3;
 }
 
-.footer__address {
+.footerAddress {
   font-size: 11px;
   line-height: 13px;
   color: #8291a3;

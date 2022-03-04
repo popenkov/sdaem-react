@@ -2,12 +2,12 @@ const initialState = {
   header: [],
 };
 
-const header = (state = initialState, action) => {
-  switch (action.type) {
+const header = (state = initialState, { type, payload }) => {
+  switch (type) {
     case "SET_HEADER":
       return {
         ...state,
-        header: action.payload,
+        header: payload,
       };
 
     default:

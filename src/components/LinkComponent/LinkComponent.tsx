@@ -6,6 +6,7 @@ import { ReactComponent as MapMarker } from "../../assets/svg/map-marker.svg";
 function LinkComponent({
   name,
   href,
+  id,
   underlined,
   top,
   bottom,
@@ -16,13 +17,13 @@ function LinkComponent({
   return (
     <Link
       to={href}
-      key={name}
+      key={id}
       className={cn({
         [styles.underlined]: underlined,
-        [styles["top-link"]]: top,
-        [styles["bottom-link"]]: bottom,
-        [styles["footer-link--grey"]]: footerGray,
-        [styles["footer-link--bold"]]: footerBold,
+        [styles.topLink]: top,
+        [styles.bottomLink]: bottom,
+        [styles.footerLinkGrey]: footerGray,
+        [styles.footerLinkBold]: footerBold,
       })}
     >
       {underlined ? <MapMarker fill="#1E2123" /> : null}
