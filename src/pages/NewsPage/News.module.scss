@@ -3,3 +3,11 @@
   margin: 0 auto;
   padding-top: 39px;
 }
+
+.newsBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: -15px;
+  margin-top: 28px;
+}

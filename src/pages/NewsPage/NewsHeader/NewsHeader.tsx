@@ -5,13 +5,11 @@ import styles from "./NewsHeader.module.scss";
 function NewsHeader() {
   return (
     <div className={styles.newsHeader}>
-      <div className={styles.newsHeaderContainer}>
-        <Breadcrumbs subtitle="Новости" />
+      <Breadcrumbs subtitle="Новости" />
 
-        <div className={styles.headerBottomContainer}>
-          <h1 className={styles.pageTitle}>Новости</h1>
-          <NewsSearchInput style={styles.newsSearchInput} />
-        </div>
+      <div className={styles.headerBottomContainer}>
+        <h1 className={styles.pageTitle}>Новости</h1>
+        <NewsSearchInput style={styles.newsSearchInput} />
       </div>
     </div>
   );
