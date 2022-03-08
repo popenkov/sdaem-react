@@ -1,0 +1,34 @@
+.newsHeader {
+  position: relative;
+  &::after {
+    content: "";
+    width: 848.5px;
+    height: 999.21px;
+    position: absolute;
+    right: -129px;
+    top: -9px;
+    z-index: -1;
+    background: linear-gradient(90deg, #94afff 0%, #4e64f9 94.5%);
+    opacity: 0.1;
+    border-radius: 40px;
+  }
+}
+
+.headerBottomContainer {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pageTitle {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+
+  color: #1e2123;
+}
+
+.newsSearchInput {
+  margin-top: 18px;
+}
