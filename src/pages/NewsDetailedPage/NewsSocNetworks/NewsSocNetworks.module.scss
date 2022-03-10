@@ -1,0 +1,32 @@
+.headerSocialNetworksContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerSocialNetworksTitle {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1e2123;
+}
+
+.headerSocialNetworksList {
+  display: flex;
+  align-items: center;
+}
+
+.headerSocialNetworksItem {
+  margin-right: 10px;
+}
+
+.headerSocialNetworksLink {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(102, 78, 249, 0.1);
+  border-radius: 19px;
+}

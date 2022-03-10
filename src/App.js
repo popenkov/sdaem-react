@@ -5,7 +5,7 @@ import { setFooter, setFooterCopyright } from "./redux/actions/footer";
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 import { Header, Footer } from "./components/";
-import { MainPage, NewsPage } from "./pages";
+import { MainPage, NewsPage, NewsDetailedPage } from "./pages";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} exact />
         <Route path="/news" element={<NewsPage />} exact />
+        <Route path="/news/1" element={<NewsDetailedPage />} exact />
       </Routes>
       <Footer />
     </div>
