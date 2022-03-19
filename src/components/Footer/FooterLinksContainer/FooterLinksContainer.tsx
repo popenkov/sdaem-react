@@ -3,7 +3,7 @@ import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
 import styles from "./FooterLinksContainer.module.scss";
 
 function FooterLinksContainer() {
-  const footerLinks = useSelector(({ footer }) => footer.footerLinksList);
+  //const footerLinks = useSelector(({ footer }) => footer.footerLinksList);
   return (
     <div className={styles.footerRightTop}>
       <div className={styles.footerHouseTypeLinks}>

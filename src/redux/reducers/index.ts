@@ -4,10 +4,10 @@ import header from "./header";
 import footer from "./footer";
 import newsList from "./newsList";
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   header: header,
   footer: footer,
   newsList: newsList,
 });
 
-export default rootReducer;
+export type RootState = ReturnType<typeof rootReducer>;
