@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./HeaderNav.module.scss";
-import { useSelector } from "react-redux";
 import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
 
 function HeaderNav() {
-  const linksTop = useSelector(({ header }) => header.header.headerTop);
+  const linksTop = useTypedSelector(({ header }) => header.header.headerTop);
 
   return (
     <nav className={styles.headerNav}>

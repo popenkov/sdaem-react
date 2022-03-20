@@ -1,3 +1,3 @@
-export { default as Header } from "./Header/Header.jsx";
-export { default as Footer } from "./Footer/Footer.jsx";
+export { default as Header } from "./Header/Header.tsx";
+export { default as Footer } from "./Footer/Footer.tsx";
 export { default as Breadcrumps } from "./Breadcrumbs/Breadcrumbs.tsx";

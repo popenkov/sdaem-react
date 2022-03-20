@@ -10,4 +10,5 @@ export const rootReducer = combineReducers({
   newsList: newsList,
 });
 
+//получаем тип рутРедьюсера
 export type RootState = ReturnType<typeof rootReducer>;

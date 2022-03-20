@@ -1,11 +1,12 @@
 import React from "react";
 import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setNewsList } from "../../redux/actions/newsList";
 import Pagination from "../../components/Pagination/Pagination.tsx";
 import styles from "./News.module.scss";
 import NewsArticle from "./NewsArticle/NewsArticle.tsx";
 import NewsHeader from "./NewsHeader/NewsHeader.tsx";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 
 function News() {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ function News() {
     });
   }, []);
 
-  const newsData = useSelector(({ newsList }) => newsList.newsList);
+  const newsData = useTypedSelector(({ newsList }) => newsList.newsList);
 
   return (
     <main className={styles.newsPage}>

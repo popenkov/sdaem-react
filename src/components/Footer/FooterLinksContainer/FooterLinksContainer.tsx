@@ -1,15 +1,19 @@
-import { useSelector } from "react-redux";
-import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
+import LinkComponent from "../../LinkComponent/LinkComponent";
 import styles from "./FooterLinksContainer.module.scss";
 
 function FooterLinksContainer() {
-  //const footerLinks = useSelector(({ footer }) => footer.footerLinksList);
+  //TODO разобраться
+  const footerLinks: any = useTypedSelector(
+    ({ footer }) => footer.footerLinksList
+  );
   return (
     <div className={styles.footerRightTop}>
       <div className={styles.footerHouseTypeLinks}>
         <ul>
           {footerLinks.houseTypesLinks &&
-            footerLinks.houseTypesLinks.map((link) => {
+            //TODO разобраться
+            footerLinks.houseTypesLinks.map((link: any) => {
               return (
                 <li key={link.name} className={styles.footerHouseTypeListItem}>
                   <LinkComponent

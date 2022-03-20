@@ -1,9 +1,9 @@
-import { useSelector } from "react-redux";
 import HeaderTop from "./HeaderTop/HeaderTop";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 
 function Header() {
-  const headerLinks = useSelector(({ header }) => header.header);
+  const headerLinks = useTypedSelector(({ header }) => header.header);
   return (
     <header>
       <HeaderTop />
