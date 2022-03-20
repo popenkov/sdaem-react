@@ -1,9 +1,10 @@
 import React from "react";
-import HeaderLink from "../../LinkComponent/LinkComponent.tsx";
+import HeaderLink from "../../LinkComponent/LinkComponent";
 
 import styles from "./HeaderBottom.module.scss";
-import AddAdvButton from "../../UI/AddAdvButton/AddAdvButton.tsx";
-import Logo from "../../UI/Logo/Logo.tsx";
+import AddAdvButton from "../../UI/AddAdvButton/AddAdvButton";
+import Logo from "../../UI/Logo/Logo";
+import { LinkComponentProps } from "../../../../interfaces/footer";
 
 function HeaderBottom({ linksBottom }) {
   return (
@@ -13,7 +14,7 @@ function HeaderBottom({ linksBottom }) {
 
         <ul className={styles.headerBottomList}>
           {linksBottom &&
-            linksBottom.map((link) => {
+            linksBottom.map((link: LinkComponentProps) => {
               return (
                 <li key={link.name}>
                   <HeaderLink

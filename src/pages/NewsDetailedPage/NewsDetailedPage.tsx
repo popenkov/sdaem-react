@@ -1,7 +1,7 @@
 import React from "react";
-import NewsBody from "./NewsBody/NewsBody.tsx";
+import NewsBody from "./NewsBody/NewsBody";
 import styles from "./NewsDetailedPage.module.scss";
-import NewsHeader from "./NewsHeader/NewsHeader.tsx";
+import NewsHeader from "./NewsHeader/NewsHeader";
 
 const newsDate = {
   img: "",

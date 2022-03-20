@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./HeaderNav.module.scss";
-import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
+import LinkComponent from "../../LinkComponent/LinkComponent";
 import { useTypedSelector } from "../../../hooks/useTypedSelector";
+import { LinkComponentProps } from "../../../../interfaces/footer";
 
 function HeaderNav() {
   const linksTop = useTypedSelector(({ header }) => header.header.headerTop);
@@ -10,7 +11,7 @@ function HeaderNav() {
     <nav className={styles.headerNav}>
       <ul className={styles.headerNavList}>
         {linksTop &&
-          linksTop.map((link) => {
+          linksTop.map((link: LinkComponentProps) => {
             return (
               <LinkComponent
                 href={link.href}

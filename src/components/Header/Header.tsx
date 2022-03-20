@@ -3,7 +3,10 @@ import HeaderBottom from "./HeaderBottom/HeaderBottom";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 
 function Header() {
-  const headerLinks = useTypedSelector(({ header }) => header.header);
+  //const headerLinks = useTypedSelector(({ header }) => header.header);
+  const headerLinks = useTypedSelector((state) => state.header);
+  console.log("headerLinks", headerLinks);
+
   return (
     <header>
       <HeaderTop />

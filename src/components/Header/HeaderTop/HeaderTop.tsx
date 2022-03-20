@@ -1,10 +1,10 @@
-import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
-
-import { ReactComponent as HeartSvg } from "../../../assets/svg/heart-stroke.svg";
+//import { ReactComponent as HeartSvg } from "../../../assets/svg/heart-stroke.svg";
 import styles from "./HeaderTop.module.scss";
-import HeaderNav from "../HeaderNav/HeaderNav.tsx";
+import HeaderNav from "../HeaderNav/HeaderNav";
 
-function HeaderTop({ linksTop }) {
+const HeartSvg = require("../../../assets/svg/heart-stroke.svg") as string;
+
+function HeaderTop() {
   return (
     <div className={styles.headerTop}>
       <div className={styles.headerTopContainer}>
@@ -13,7 +13,7 @@ function HeaderTop({ linksTop }) {
         <div className={styles.headerUserMenu}>
           <a href="" className={styles.headerFavourites}>
             Закладки
-            <HeartSvg className={styles.headerLogo} />
+            <HeartSvg /* className={styles.headerLogo} */ />
           </a>
           <a href="" className={styles.headerLogin}>
             Вход и регистрация

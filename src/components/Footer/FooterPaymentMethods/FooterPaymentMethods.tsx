@@ -1,11 +1,23 @@
 import styles from "./FooterPaymentMethods.module.scss";
 
-import BelkartIcon from "../../../assets/images/footer/belkart.png";
-import MastercardSecureIcon from "../../../assets/images/footer/mastercard-securecode.png";
-import MastercardIcon from "../../../assets/images/footer/mastercard.png";
-import VisaIcon from "../../../assets/images/footer/visa.png";
-import VisaVerifiedIcon from "../../../assets/images/footer/verified-by-visa.png";
-import WebpayIcon from "../../../assets/images/footer/webpay.png";
+// import BelkartIcon from "../../../assets/images/footer/belkart.png";
+// import MastercardSecureIcon from "../../../assets/images/footer/mastercard-securecode.png";
+// import MastercardIcon from "../../../assets/images/footer/mastercard.png";
+// import VisaIcon from "../../../assets/images/footer/visa.png";
+// import VisaVerifiedIcon from "../../../assets/images/footer/verified-by-visa.png";
+// import WebpayIcon from "../../../assets/images/footer/webpay.png";
+
+const BelkartIcon =
+  require("../../../assets/images/footer/belkart.png") as string;
+const MastercardSecureIcon =
+  require("../../../assets/images/footer/mastercard-securecode.png") as string;
+const MastercardIcon =
+  require("../../../assets/images/footer/mastercard.png") as string;
+const VisaIcon = require("../../../assets/images/footer/visa.png") as string;
+const VisaVerifiedIcon =
+  require("../../../assets/images/footer/verified-by-visa.png") as string;
+const WebpayIcon =
+  require("../../../assets/images/footer/webpay.png") as string;
 
 const iconsArr = [
   { src: VisaIcon, alt: "Иконка Visa" },

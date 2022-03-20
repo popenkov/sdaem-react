@@ -1,9 +1,11 @@
 import React from "react";
 import cn from "classnames";
 import styles from "./SearchButton.module.scss";
-import { ReactComponent as SearchIcon } from "../../../assets/svg/search.svg";
+//import { ReactComponent as SearchIcon } from "../../../assets/svg/search.svg";
 
-function SearchButton({ style }) {
+const SearchIcon = require("../../../assets/svg/search.svg") as string;
+
+function SearchButton({ style }: string) {
   return (
     <button className={cn([styles.SearchButton, style])}>
       <SearchIcon className={styles.searchIcon} />

@@ -1,19 +1,9 @@
 import { Link } from "react-router-dom";
 import cn from "classnames";
 import styles from "./LinkComponent.module.scss";
-import { ReactComponent as MapMarker } from "../../assets/svg/map-marker.svg";
 
-interface LinkComponentProps {
-  name: string;
-  href: string;
-  id: string;
-  underlined: boolean | undefined;
-  top: boolean | undefined;
-  bottom: boolean | undefined;
-  yellowMap: boolean | undefined;
-  footerGray: boolean | undefined;
-  footerBold: boolean | undefined;
-}
+import { LinkComponentProps } from "../../../interfaces/footer";
+const MapMarker = require("../../assets/svg/map-marker.svg") as string;
 
 function LinkComponent({
   name,
@@ -23,8 +13,8 @@ function LinkComponent({
   top,
   bottom,
   yellowMap,
-  footerGray,
-  footerBold,
+  gray,
+  bold,
 }: LinkComponentProps) {
   return (
     <Link
@@ -34,8 +24,8 @@ function LinkComponent({
         [styles.underlined]: underlined,
         [styles.topLink]: top,
         [styles.bottomLink]: bottom,
-        [styles.footerLinkGrey]: footerGray,
-        [styles.footerLinkBold]: footerBold,
+        [styles.footerLinkGrey]: gray,
+        [styles.footerLinkBold]: bold,
       })}
     >
       {underlined ? <MapMarker fill="#1E2123" /> : null}

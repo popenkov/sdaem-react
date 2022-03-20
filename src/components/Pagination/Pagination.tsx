@@ -63,7 +63,7 @@ const paginationLinks = [
 function Pagination() {
   const [activePage, setActivePage] = React.useState(0);
 
-  const onSelectPage = (index) => {
+  const onSelectPage = (index: number) => {
     setActivePage(index);
     console.log(activePage);
   };
