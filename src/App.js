@@ -12,6 +12,7 @@ function App() {
 
   useEffect(() => {
     axios.get("http://localhost:3001/headerFooter").then(({ data }) => {
+      console.log("data", typeof data.header);
       dispatch(setHeader(data.header));
       dispatch(setFooter(data.footer));
       dispatch(setFooterCopyright(data.footerCopyright));

@@ -1,10 +1,8 @@
-//import { ReactComponent as HeartSvg } from "../../../assets/svg/heart-stroke.svg";
 import styles from "./HeaderTop.module.scss";
 import HeaderNav from "../HeaderNav/HeaderNav";
+import { ReactComponent as HeartSvg } from "../../../assets/svg/heart-stroke.svg";
 
-const HeartSvg = require("../../../assets/svg/heart-stroke.svg") as string;
-
-function HeaderTop() {
+const HeaderTop = (): JSX.Element => {
   return (
     <div className={styles.headerTop}>
       <div className={styles.headerTopContainer}>
@@ -13,7 +11,7 @@ function HeaderTop() {
         <div className={styles.headerUserMenu}>
           <a href="" className={styles.headerFavourites}>
             Закладки
-            <HeartSvg /* className={styles.headerLogo} */ />
+            <HeartSvg />
           </a>
           <a href="" className={styles.headerLogin}>
             Вход и регистрация
@@ -22,6 +20,6 @@ function HeaderTop() {
       </div>
     </div>
   );
-}
+};
 
 export default HeaderTop;

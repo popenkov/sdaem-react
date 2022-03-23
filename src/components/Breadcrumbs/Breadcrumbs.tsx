@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
 import styles from "./Breadcrumbs.module.scss";
-const HomeIcon = require("../../assets/svg/home.svg") as string;
+import { ReactComponent as HomeIcon } from "../../assets/svg/home.svg";
 
 interface BreadcrumbsProps {
   title: string;
@@ -11,8 +11,7 @@ function Breadcrumbs({ title, subtitle }: BreadcrumbsProps): JSX.Element {
   return (
     <div className={styles.breadcrumps}>
       <div className={styles.homeIconContainer}>
-        {/* className={styles.homeIcon}  */}
-        <HomeIcon />
+        <HomeIcon className={styles.homeIcon} />
         {title ? <p className={styles.title}>{title}</p> : null}
       </div>
       {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}

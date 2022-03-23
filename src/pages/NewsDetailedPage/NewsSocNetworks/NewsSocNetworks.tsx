@@ -1,16 +1,10 @@
 import React from "react";
 import styles from "./NewsSocNetworks.module.scss";
-// import { ReactComponent as VkIcon } from "../../../assets/svg/vk.svg";
-// import { ReactComponent as FBIcon } from "../../../assets/svg/fb.svg";
-// import { ReactComponent as ViberIcon } from "../../../assets/svg/viber.svg";
-// import { ReactComponent as TelegramIcon } from "../../../assets/svg/telegram.svg";
-// import { ReactComponent as WhatsappIcon } from "../../../assets/svg/whatsapp.svg";
-
-const VkIcon = require("../../../assets/svg/vk.svg") as string;
-const FBIcon = require("../../../assets/svg/fb.svg") as string;
-const ViberIcon = require("../../../assets/svg/viber.svg") as string;
-const TelegramIcon = require("../../../assets/svg/telegram.svg") as string;
-const WhatsappIcon = require("../../../assets/svg/whatsapp.svg") as string;
+import { ReactComponent as VkIcon } from "../../../assets/svg/vk.svg";
+import { ReactComponent as FBIcon } from "../../../assets/svg/fb.svg";
+import { ReactComponent as ViberIcon } from "../../../assets/svg/viber.svg";
+import { ReactComponent as TelegramIcon } from "../../../assets/svg/telegram.svg";
+import { ReactComponent as WhatsappIcon } from "../../../assets/svg/whatsapp.svg";
 
 function NewsSocNetworks() {
   return (

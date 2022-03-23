@@ -6,13 +6,19 @@ import AddAdvButton from "../../UI/AddAdvButton/AddAdvButton";
 import Logo from "../../UI/Logo/Logo";
 import { LinkComponentProps } from "../../../../interfaces/footer";
 
-function HeaderBottom({ linksBottom }) {
+interface HeaderBottomProps {
+  linksBottom: any[];
+}
+
+function HeaderBottom({ linksBottom }: HeaderBottomProps): JSX.Element {
+  console.log("linksBottom", linksBottom);
+
   return (
     <div className={styles.headerBottom}>
       <div className={styles.headerBottomContainer}>
         <Logo />
 
-        <ul className={styles.headerBottomList}>
+        {/*   <ul className={styles.headerBottomList}>
           {linksBottom &&
             linksBottom.map((link: LinkComponentProps) => {
               return (
@@ -28,7 +34,7 @@ function HeaderBottom({ linksBottom }) {
                 </li>
               );
             })}
-        </ul>
+        </ul> */}
 
         {/* <a className={styles.headerBottomAddAdv}>+ Разместить объявление</a> */}
         <AddAdvButton />

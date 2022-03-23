@@ -1,9 +1,14 @@
 import React from "react";
-import { Breadcrumps } from "../../../components";
+import { Breadcrumps } from "../../../components/index";
 import NewsSocNetworks from "../NewsSocNetworks/NewsSocNetworks";
 import styles from "./NewsHeader.module.scss";
 
-function NewsHeader({ title, date }) {
+interface NewsHeaderProps {
+  title: string;
+  date: string;
+}
+
+function NewsHeader({ title, date }: NewsHeaderProps) {
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>

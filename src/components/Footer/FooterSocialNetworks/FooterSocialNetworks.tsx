@@ -1,15 +1,8 @@
 import styles from "./FooterSocialNetworks.module.scss";
 
-// import { ReactComponent as InstagramSvg } from "../../../assets/svg/instagram-outlined.svg";
-// import { ReactComponent as FBSvg } from "../../../assets/svg/fb-outlined.svg";
-// import { ReactComponent as VKSvg } from "../../../assets/svg/vk-outlined.svg";
-
-const InstagramSvg =
-  require("../../../assets/svg/instagram-outlined.svg") as string;
-
-const FBSvg = require("../../../assets/svg/fb-outlined.svg") as string;
-
-const VKSvg = require("../../../assets/svg/vk-outlined.svg") as string;
+import { ReactComponent as InstagramSvg } from "../../../assets/svg/instagram-outlined.svg";
+import { ReactComponent as FBSvg } from "../../../assets/svg/fb-outlined.svg";
+import { ReactComponent as VKSvg } from "../../../assets/svg/vk-outlined.svg";
 
 function FooterSocialNetworks() {
   return (

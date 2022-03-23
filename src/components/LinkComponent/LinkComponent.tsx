@@ -3,7 +3,8 @@ import cn from "classnames";
 import styles from "./LinkComponent.module.scss";
 
 import { LinkComponentProps } from "../../../interfaces/footer";
-const MapMarker = require("../../assets/svg/map-marker.svg") as string;
+
+import { ReactComponent as MapMarker } from "../../assets/svg/map-marker.svg";
 
 function LinkComponent({
   name,

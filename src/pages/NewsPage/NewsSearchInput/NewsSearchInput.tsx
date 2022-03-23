@@ -3,9 +3,13 @@ import cn from "classnames";
 import SearchButton from "../../../components/UI/SearchButton/SearchButton";
 import styles from "./NewsSearchInput.module.scss";
 
-function NewsSearchInput({ style }) {
+interface NewsSearchInputProps {
+  style: string;
+}
+
+function NewsSearchInput({ style }: NewsSearchInputProps) {
   const searchInput = React.useRef(null);
-  const handleSubmit = (evt) => {
+  const handleSubmit = (evt: React.SyntheticEvent) => {
     evt.preventDefault();
   };
 
@@ -20,7 +24,7 @@ function NewsSearchInput({ style }) {
         className={styles.NewsSearchInput}
         ref={searchInput}
       />
-      <SearchButton style={styles.NewsSearchButton} />
+      <SearchButton /* style={styles.NewsSearchButton} */ />
     </form>
   );
 }

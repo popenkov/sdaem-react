@@ -6,10 +6,10 @@ const SET_NEWS_LIST = "SET_NEWS_LIST";
 
 export interface setNewsListAction {
   type: typeof SET_NEWS_LIST;
-  payload: any[];
+  payload: [];
 }
 
-const initialState = {
+const initialState: NewsListState = {
   newsList: [],
 };
 

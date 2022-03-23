@@ -1,11 +1,11 @@
 import React from "react";
-import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs.tsx";
-import NewsSearchInput from "../NewsSearchInput/NewsSearchInput.tsx";
+import { Breadcrumps } from "../../../components/index";
+import NewsSearchInput from "../NewsSearchInput/NewsSearchInput";
 import styles from "./NewsHeader.module.scss";
 function NewsHeader() {
   return (
     <div className={styles.newsHeader}>
-      <Breadcrumbs subtitle="Новости" />
+      <Breadcrumps title="Новости" subtitle="Новости" />
 
       <div className={styles.headerBottomContainer}>
         <h1 className={styles.pageTitle}>Новости</h1>

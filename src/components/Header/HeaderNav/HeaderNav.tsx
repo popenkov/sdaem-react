@@ -5,12 +5,12 @@ import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import { LinkComponentProps } from "../../../../interfaces/footer";
 
 function HeaderNav() {
-  const linksTop = useTypedSelector(({ header }) => header.header.headerTop);
+  /*   const linksTop = useTypedSelector(({ header }) => header.header.headerTop); */
 
   return (
     <nav className={styles.headerNav}>
       <ul className={styles.headerNavList}>
-        {linksTop &&
+        {/*       {linksTop &&
           linksTop.map((link: LinkComponentProps) => {
             return (
               <LinkComponent
@@ -24,7 +24,7 @@ function HeaderNav() {
                 key={link.name}
               />
             );
-          })}
+          })} */}
       </ul>
     </nav>
   );
