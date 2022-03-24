@@ -4,7 +4,7 @@
 }
 
 .headerSocialNetworksTitle {
-  margin-right: 10px;
+  margin-right: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -17,7 +17,10 @@
 }
 
 .headerSocialNetworksItem {
-  margin-right: 10px;
+  margin-right: 19px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .headerSocialNetworksLink {

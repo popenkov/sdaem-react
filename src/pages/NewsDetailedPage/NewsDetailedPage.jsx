@@ -1,24 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
 import NewsBody from "./NewsBody/NewsBody.tsx";
 import styles from "./NewsDetailedPage.module.scss";
 import NewsHeader from "./NewsHeader/NewsHeader.tsx";
+import { useParams } from "react-router-dom";
+import { setNewsData } from "../../redux/actions/newsList";
+import { Audio } from "react-loader-spinner";
+import ReadAlso from "./ReadAlso/ReadAlso";
 
-const newsDate = {
-  img: "",
-  body: 'Итак, утром вы выезжаете в путь по Молодеченской трассе. Если автомобиля у вас нет - садитесь на маршрутку в сторону Молодечно от железнодорожного вокзала. Остановка называется «Линия Сталина» - да-да, именно здесь вы и проведёте ближайшие несколько часов, а вероятнее всего – останетесь до самого вечера. <br>«Линия Сталина» - это уникальный музейный комплекс, располагающийся под открытым небом. Поэтому желательно приезжать сюда в хорошую погоду. Его территория поистине огромна: целых 26 га. Такое название дано музею неспроста: «Линией Сталина» в 20е-30е гг. XX века именовали цепь укреплений, созданную для защиты государственной границы СССР. Комплекс же построен лишь в 2005 году – к шестидесятой годовщине Победы в Великой Отечественной войне.<br>Если вы заранее позаботились о том, чтобы снять усадьбу на сутки в направлении Молодечно, то можете провести в музейном комплексе хоть целый день. Здесь действительно есть на что посмотреть: ДОТы, испещрённые следами немецких снарядов, окопы, противотанковые заграждения, зенитные пушки, бронетехника… Вы встретите даже элементы ракетных войск – и всё это не муляжи, а настоящие боевые орудия! За отдельную плату вам предложат пострелять из винтовки и пулемёта, а также прокатиться на танке. Проголодались? Загляните в кафе и насладитесь сытным домашним обедом.<br>Посетить «Линию Сталина» будет интересно как взрослым, так и детям. Особенно мальчишкам! Уставшие от впечатлений, они будут рады вместо долгой дороги домой остановиться на ночь в уютном современном коттедже. На сайте можно выбрать и снять посуточно наиболее удобный для вас вариант. Проведите незабываемые выходные за городом – приезжайте в «Линию Сталина»!<br>Отличная усадьба в 10 км от "Линии Сталина".',
-};
+function NewsDetailedPage() {
+  const { newsId } = useParams();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setNewsData({}));
+    axios
+      .get(`http://localhost:3001/newsData?newsId=${newsId}`)
+      .then(({ data }) => {
+        dispatch(setNewsData(data));
+      });
+  }, []);
 
-function newsDetailedPage() {
-  return (
-    <div>
-      <NewsHeader
-        title="Линия Сталина: суровый отдых в усадьбах на сутки"
-        date="14 Января 2008"
-      />
+  const newsData = useSelector((state) => state.newsList.newsData[0]);
 
-      <NewsBody />
-    </div>
-  );
+  if (newsData) {
+    return (
+      <div>
+        <NewsHeader title={newsData.title} date={newsData.date} />
+
+        <NewsBody
+          img={newsData.img}
+          body={newsData.body}
+          title={newsData.title}
+        />
+        <ReadAlso />
+      </div>
+    );
+  } else {
+    return (
+      <Audio height="100" width="100" color="#6B50E9" ariaLabel="loading" />
+    );
+  }
 }
 
-export default newsDetailedPage;
+export default NewsDetailedPage;

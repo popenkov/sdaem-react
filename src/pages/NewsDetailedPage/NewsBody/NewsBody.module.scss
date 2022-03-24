@@ -1,0 +1,32 @@
+.body {
+  position: relative;
+  width: 100%;
+  max-width: 844px;
+  margin: 0 auto;
+  padding-bottom: 65px;
+}
+
+.imgDecoration {
+  position: absolute;
+  top: 36px;
+  left: -111px;
+}
+
+.img {
+  position: relative;
+  top: -44px;
+  left: 0;
+  width: 844px;
+  height: 563px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: drop-shadow(0px 20px 40px rgba(39, 95, 158, 0.1));
+}
+
+.text {
+  margin-top: -7px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1e2123;
+}

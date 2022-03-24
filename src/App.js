@@ -22,9 +22,10 @@ function App() {
     <div className="App ">
       <Header />
       <Routes>
-        <Route path="/" element={<MainPage />} exact />
-        <Route path="/news" element={<NewsPage />} exact />
-        <Route path="/news/1" element={<NewsDetailedPage />} exact />
+        <Route path="/" element={<MainPage />} end />
+        <Route path="/news/:newsId" element={<NewsDetailedPage />} end />
+        <Route path="/news" element={<NewsPage />} end />
+        {/* <Route path="/news/1" element={<NewsDetailedPage />} end /> */}
       </Routes>
       <Footer />
     </div>
