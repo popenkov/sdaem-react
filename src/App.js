@@ -6,6 +6,7 @@ import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 import { Header, Footer } from "./components/";
 import { MainPage, NewsPage, NewsDetailedPage } from "./pages";
+import AdsOnMap from "./pages/AdsOnMap/AdsOnMap";
 
 function App() {
   const dispatch = useDispatch();
@@ -25,6 +26,8 @@ function App() {
         <Route path="/" element={<MainPage />} end />
         <Route path="/news/:newsId" element={<NewsDetailedPage />} end />
         <Route path="/news" element={<NewsPage />} end />
+        <Route path="/ads-on-map" element={<AdsOnMap />} end />
+
         {/* <Route path="/news/1" element={<NewsDetailedPage />} end /> */}
       </Routes>
       <Footer />
