@@ -1,6 +1,6 @@
 import React from "react";
 import { Breadcrumps } from "../../../components";
-import NewsSocNetworks from "../NewsSocNetworks/NewsSocNetworks.tsx";
+import NewsSocNetworks from "../NewsSocNetworks/NewsSocNetworks.jsx";
 import styles from "./NewsHeader.module.scss";
 
 function NewsHeader({ title, date }) {

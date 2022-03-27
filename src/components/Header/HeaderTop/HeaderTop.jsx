@@ -1,8 +1,8 @@
-import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
+import LinkComponent from "../../LinkComponent/LinkComponent.jsx";
 
 import { ReactComponent as HeartSvg } from "../../../assets/svg/heart-stroke.svg";
 import styles from "./HeaderTop.module.scss";
-import HeaderNav from "../HeaderNav/HeaderNav.tsx";
+import HeaderNav from "../HeaderNav/HeaderNav.jsx";
 
 function HeaderTop({ linksTop }) {
   return (

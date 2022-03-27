@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import NewsBody from "./NewsBody/NewsBody.tsx";
+import NewsBody from "./NewsBody/NewsBody.jsx";
 import styles from "./NewsDetailedPage.module.scss";
-import NewsHeader from "./NewsHeader/NewsHeader.tsx";
+import NewsHeader from "./NewsHeader/NewsHeader.jsx";
 import { useParams } from "react-router-dom";
 import { setNewsData } from "../../redux/actions/newsList";
 import { Audio } from "react-loader-spinner";
@@ -19,7 +19,7 @@ function NewsDetailedPage() {
       .then(({ data }) => {
         dispatch(setNewsData(data));
       });
-  }, []);
+  }, [newsId]);
 
   const newsData = useSelector((state) => state.newsList.newsData[0]);
 

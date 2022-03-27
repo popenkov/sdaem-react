@@ -65,7 +65,6 @@ function Pagination() {
 
   const onSelectPage = (index) => {
     setActivePage(index);
-    console.log(activePage);
   };
 
   return (

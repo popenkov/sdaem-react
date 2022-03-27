@@ -13,7 +13,7 @@ function NewsArticle({ img, alt, header, p, date, href, id, className }) {
         <p className={styles.newsParagraph}>{p}</p>
         <div className={styles.newsBottomContainer}>
           <p className={styles.newsDate}>{date}</p>
-          <Link to={`${id}`} className={styles.newsLink}>
+          <Link to={`/news/${id}`} className={styles.newsLink}>
             Читать
           </Link>
         </div>

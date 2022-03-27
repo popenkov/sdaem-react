@@ -1,6 +1,6 @@
 import React from "react";
-import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs.tsx";
-import NewsSearchInput from "../NewsSearchInput/NewsSearchInput.tsx";
+import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs.jsx";
+import NewsSearchInput from "../NewsSearchInput/NewsSearchInput.jsx";
 import styles from "./NewsHeader.module.scss";
 function NewsHeader() {
   return (

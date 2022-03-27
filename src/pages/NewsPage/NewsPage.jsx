@@ -2,10 +2,10 @@ import React from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { setNewsList } from "../../redux/actions/newsList";
-import Pagination from "../../components/Pagination/Pagination.tsx";
+import Pagination from "../../components/Pagination/Pagination.jsx";
 import styles from "./News.module.scss";
-import NewsArticle from "./NewsArticle/NewsArticle.tsx";
-import NewsHeader from "./NewsHeader/NewsHeader.tsx";
+import NewsArticle from "./NewsArticle/NewsArticle.jsx";
+import NewsHeader from "./NewsHeader/NewsHeader.jsx";
 
 function News() {
   const dispatch = useDispatch();
