@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import cn from "classnames";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { setNewsList } from "../../../redux/actions/newsList";
-import cn from "classnames";
-import SearchButton from "../../../components/UI/SearchButton/SearchButton.tsx";
+import SearchButton from "../../../components/UI/SearchButton/SearchButton.jsx";
 import styles from "./NewsSearchInput.module.scss";
 
 function NewsSearchInput({ style }) {
   const dispatch = useDispatch();
+  const [isFound, setIsFound] = useState(true);
   const searchInput = React.useRef(null);
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(searchInput.current.value);
-
-    //json-sever не предлагает фильтрацию на сервере по подстроке
+    //json server не позволяет фильтровать по подстроке
     axios.get("http://localhost:3001/newsOverview").then(({ data }) => {
-      console.log(data);
-      const filteredData = data.filter((news) => {
-        return news.header.includes(searchInput.current.value);
+      const filteredData = data.filter(function (news) {
+        return news.header
+          .toLowerCase()
+          .includes(searchInput.current.value.toLowerCase());
       });
-      console.log(filteredData);
-      /* dispatch(setNewsList(data)); */
+
+      if (filteredData.length === 0) {
+        setIsFound(false);
+        dispatch(setNewsList(data));
+      } else {
+        setIsFound(true);
+        dispatch(setNewsList(filteredData));
+      }
     });
   };
 
@@ -36,6 +42,9 @@ function NewsSearchInput({ style }) {
         ref={searchInput}
       />
       <SearchButton style={styles.NewsSearchButton} />
+      {!isFound ? (
+        <p className={styles.notFound}>По запросу ничего не найдено</p>
+      ) : null}
     </form>
   );
 }

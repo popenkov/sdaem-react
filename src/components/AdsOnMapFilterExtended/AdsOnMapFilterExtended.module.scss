@@ -1,0 +1,113 @@
+.filter {
+  position: relative;
+  width: 100%;
+  /*  height: 92px; */
+  min-height: 328px;
+  background: #ffffff;
+  border: 1px solid rgba(102, 78, 249, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgba(39, 95, 158, 0.08);
+}
+
+.filterContainer {
+  width: 100%;
+  /* height: 100%; */
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.selectContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.filterLabel {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #664ef9;
+}
+
+.formRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRightTop {
+  display: flex;
+  align-items: center;
+}
+
+.formRightBottom {
+  display: flex;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.customCheckbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkboxLabel {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.checkboxLabel::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #f8f8f8;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  margin-right: 0.5em;
+}
+
+.customCheckbox:checked + .checkboxLabel::before {
+  background: #664ef9;
+  border: 1px solid #664ef9;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% 70%;
+}
+
+/* .shadow {
+  background: rgba(46, 46, 46, 0.7);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+ */

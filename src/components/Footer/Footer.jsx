@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./Footer.module.scss";
 
-import FooterCopyright from "./FooterCopyright/FooterCopyright.tsx";
-import FooterLinksContainer from "./FooterLinksContainer/FooterLinksContainer.tsx";
+import FooterCopyright from "./FooterCopyright/FooterCopyright.jsx";
+import FooterLinksContainer from "./FooterLinksContainer/FooterLinksContainer.jsx";
 import FooterPaymentMethods from "./FooterPaymentMethods/FooterPaymentMethods";
 import FooterSocialNetworks from "./FooterSocialNetworks/FooterSocialNetworks";
 

@@ -1,9 +1,9 @@
 import React from "react";
-import HeaderLink from "../../LinkComponent/LinkComponent.tsx";
+import HeaderLink from "../../LinkComponent/LinkComponent.jsx";
 
 import styles from "./HeaderBottom.module.scss";
-import AddAdvButton from "../../UI/AddAdvButton/AddAdvButton.tsx";
-import Logo from "../../UI/Logo/Logo.tsx";
+import AddAdvButton from "../../UI/AddAdvButton/AddAdvButton.jsx";
+import Logo from "../../UI/Logo/Logo.jsx";
 
 function HeaderBottom({ linksBottom }) {
   return (

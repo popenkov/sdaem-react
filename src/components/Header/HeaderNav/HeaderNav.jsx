@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./HeaderNav.module.scss";
 import { useSelector } from "react-redux";
-import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
+import LinkComponent from "../../LinkComponent/LinkComponent.jsx";
 
 function HeaderNav() {
   const linksTop = useSelector(({ header }) => header.header.headerTop);

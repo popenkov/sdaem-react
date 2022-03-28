@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import LinkComponent from "../../LinkComponent/LinkComponent.tsx";
+import LinkComponent from "../../LinkComponent/LinkComponent.jsx";
 import styles from "./FooterLinksContainer.module.scss";
 
 function FooterLinksContainer() {

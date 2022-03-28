@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setNewsList } from "../../redux/actions/newsList";
 import styles from "./News.module.scss";
 import NewsArticle from "./NewsArticle/NewsArticle.jsx";
-import NewsHeader from "./NewsHeader/NewsHeader.tsx";
+import NewsHeader from "./NewsHeader/NewsHeader.jsx";
 import NewPagination from "../../components/NewPagination/NewPagination";
 
 function News() {

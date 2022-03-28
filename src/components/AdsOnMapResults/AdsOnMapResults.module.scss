@@ -1,0 +1,43 @@
+.results {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+
+  width: 711px;
+  height: 100%;
+  padding: 40px 20px;
+  background: #ffffff;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  color: #1e2123;
+}
+
+.recommendationTitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #664ef9;
+}
+
+.recommendationTags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recommendationTag {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  background: rgba(78, 100, 249, 0.1);
+  border-radius: 17px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #664ef9;
+}
