@@ -11,6 +11,7 @@ import ReadAlso from "./ReadAlso/ReadAlso";
 
 function NewsDetailedPage() {
   const { newsId } = useParams();
+  console.log(newsId);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setNewsData({}));
@@ -19,7 +20,7 @@ function NewsDetailedPage() {
       .then(({ data }) => {
         dispatch(setNewsData(data));
       });
-  }, []);
+  }, [newsId]);
 
   const newsData = useSelector((state) => state.newsList.newsData[0]);
 

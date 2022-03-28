@@ -23,7 +23,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} end />
-        <Route path="/news/:newsId" element={<NewsDetailedPage />} end />
+        <Route path="/news/:newsId" element={<NewsDetailedPage />} />
         <Route path="/news" element={<NewsPage />} end />
         {/* <Route path="/news/1" element={<NewsDetailedPage />} end /> */}
       </Routes>
