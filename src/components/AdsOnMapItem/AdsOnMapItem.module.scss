@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 15px 0;
+
+  border-bottom: 1px solid #664ef9;
+
+  &:first-child {
+    border-top: 1px solid #664ef9;
+  }
+}
+
+.img {
+  width: 268px;
+  height: 195px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: drop-shadow(0px 20px 40px rgba(39, 95, 158, 0.05));
+}
+
+.description {
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}

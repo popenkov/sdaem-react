@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./AdsOnMapResults.module.scss";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs.jsx";
 import { Link } from "react-router-dom";
+import AdsOnMapItem from "../AdsOnMapItem/AdsOnMapItem";
 const AdsOnMapData = {
   title: "Квартиры Минска на карте",
   tags: [
@@ -20,6 +21,7 @@ const AdsOnMapData = {
   ],
   ads: [
     {
+      id: 1,
       gold: true,
       title: "4-комн. апартаменты на Грушевке ",
       address: "Минск, б-р Мулявина, д. 10",
@@ -34,6 +36,7 @@ const AdsOnMapData = {
       moreLink: "#",
     },
     {
+      id: 2,
       gold: true,
       title: "4-комн. апартаменты на Грушевке ",
       address: "Минск, б-р Мулявина, д. 10",
@@ -48,6 +51,7 @@ const AdsOnMapData = {
       moreLink: "#",
     },
     {
+      id: 3,
       gold: true,
       title: "4-комн. апартаменты на Грушевке ",
       address: "Минск, б-р Мулявина, д. 10",
@@ -62,6 +66,7 @@ const AdsOnMapData = {
       moreLink: "#",
     },
     {
+      id: 4,
       gold: true,
       title: "4-комн. апартаменты на Грушевке ",
       address: "Минск, б-р Мулявина, д. 10",
@@ -98,6 +103,12 @@ function AdsOnMapResults() {
             );
           })}
         </div>
+
+        <section>
+          {AdsOnMapData.ads.map((ad) => {
+            return <AdsOnMapItem {...ad} key={ad.id} />;
+          })}
+        </section>
       </div>
     </div>
   );
