@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 import styles from "./YandexMap.module.scss";
 
 const mapData = {
   center: [55.751574, 37.573856],
-  zoom: 5,
+  zoom: 15,
 };
 
 const coordinates = [
@@ -13,10 +13,17 @@ const coordinates = [
 ];
 
 function YandexMap() {
+  const mapRef = useRef(null);
   return (
     <YMaps>
       <div className={styles.mapContainer}>
-        <Map defaultState={mapData} className={styles.map}>
+        <Map
+          defaultState={mapData}
+          className={styles.map}
+          instanceRef={(ref) => {
+            ref && ref.behaviors.disable("scrollZoom");
+          }}
+        >
           {coordinates.map((coordinate, id) => (
             <Placemark key={coordinate} geometry={coordinate} />
           ))}

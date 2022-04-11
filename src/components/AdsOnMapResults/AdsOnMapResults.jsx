@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import Select from "react-select";
 import styles from "./AdsOnMapResults.module.scss";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs.jsx";
 import { Link } from "react-router-dom";
@@ -83,7 +84,41 @@ const AdsOnMapData = {
   ],
 };
 
+const filterOptions = [
+  { value: "1", label: "1" },
+  { value: "2", label: "2" },
+  { value: "3", label: "3" },
+];
+
+const filterStyles = {
+  option: (provided, state) => ({
+    ...provided,
+    borderBottom: "1px dotted pink",
+    color: state.isSelected ? "#1E2123" : "#664ef9",
+    padding: 10,
+  }),
+  control: () => ({
+    width: 200,
+    height: 35,
+    border: "2px solid #FFFFFF",
+    background: "#CED2FE",
+    display: "flex",
+    borderRadius: "20px",
+  }),
+  singleValue: (provided, state) => {
+    const opacity = state.isDisabled ? 0.5 : 1;
+    const transition = "opacity 300ms";
+
+    return { ...provided, opacity, transition };
+  },
+};
+
+const handleSelect = () => {
+  console.log("change filter");
+};
+
 function AdsOnMapResults() {
+  const filterRef = useRef(null);
   return (
     <div className={styles.results}>
       <Breadcrumbs subtitle="Объявления на карте" />
@@ -104,6 +139,16 @@ function AdsOnMapResults() {
           })}
         </div>
 
+        <Select
+          className={styles.resultsFilter}
+          name="roomsAmount"
+          options={filterOptions}
+          styles={filterStyles}
+          ref={filterRef}
+          onChange={() => {
+            setTimeout(handleSelect, 0);
+          }}
+        />
         <section>
           {AdsOnMapData.ads.map((ad) => {
             return <AdsOnMapItem {...ad} key={ad.id} />;

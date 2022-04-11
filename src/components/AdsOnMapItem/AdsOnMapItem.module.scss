@@ -2,27 +2,153 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  padding: 15px 0;
+  padding: 24px 0;
 
-  border-bottom: 1px solid #664ef9;
+  border-bottom: 1px solid rgba(102, 78, 249, 0.1);
 
   &:first-child {
-    border-top: 1px solid #664ef9;
+    border-top: 1px solid rgba(102, 78, 249, 0.1);
   }
 }
 
 .img {
   width: 268px;
   height: 195px;
+  margin-right: 15px;
   object-fit: cover;
   border-radius: 8px;
   filter: drop-shadow(0px 20px 40px rgba(39, 95, 158, 0.05));
 }
 
 .description {
+  width: 100%;
 }
 
 .header {
+  /*  width: 100%; */
   display: flex;
   align-items: flex-start;
+}
+
+.headerLeft {
+}
+
+.headerTitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1e2123;
+}
+
+.headerAddress {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.svg {
+  width: 13px;
+  height: 13px;
+  margin-right: 12px;
+  fill: #664ef9;
+}
+
+.price {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.priceValue {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #664ef9;
+}
+
+.priceText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bdbdbd;
+}
+
+.descriptionTags {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.descriptionTag {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 7px 11px;
+  background: #f8f8f8;
+  border-radius: 18px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #686868;
+}
+
+.descriptionTagSvg {
+  margin-right: 6px;
+}
+
+.descriptionText {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #686868;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.footerFavourites {
+  cursor: pointer;
+  border: none;
+  padding: 7px;
+  background: rgba(235, 87, 87, 0.1);
+  border-radius: 22px;
+
+  fill: #eb5757;
+}
+
+.footerContacts {
+  cursor: pointer;
+  border: none;
+  padding: 6px 15px;
+  background: #f8f8f8;
+  border-radius: 18px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #664ef9;
+}
+
+.moreDetailsLink {
+  margin-left: 157px;
+  padding: 7px 15px;
+  background: rgba(255, 213, 79, 0.1);
+  border-radius: 17px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #fec100;
 }

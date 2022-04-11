@@ -29,7 +29,6 @@ function HeaderBottom({ linksBottom }) {
             })}
         </ul>
 
-        {/* <a className={styles.headerBottomAddAdv}>+ Разместить объявление</a> */}
         <AddAdvButton />
       </div>
     </div>
