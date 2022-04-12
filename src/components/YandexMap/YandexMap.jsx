@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
+import AdsOnMapShowResult from "../AdsOnMapShowResult/AdsOnMapShowResult";
 import styles from "./YandexMap.module.scss";
 
 const mapData = {
@@ -8,28 +9,40 @@ const mapData = {
 };
 
 const coordinates = [
-  [55.684758, 37.738521],
+  [55.751574, 37.573856],
   [57.684758, 39.738521],
 ];
 
 function YandexMap() {
   const mapRef = useRef(null);
+  const [showResults, setShowResults] = useState(false);
+
+  const clickOnMap = (coordinate) => {
+    console.log(coordinate);
+  };
+
   return (
-    <YMaps>
-      <div className={styles.mapContainer}>
-        <Map
-          defaultState={mapData}
-          className={styles.map}
-          instanceRef={(ref) => {
-            ref && ref.behaviors.disable("scrollZoom");
-          }}
-        >
-          {coordinates.map((coordinate, id) => (
-            <Placemark key={coordinate} geometry={coordinate} />
-          ))}
-        </Map>
-      </div>
-    </YMaps>
+    <>
+      <YMaps>
+        <div className={styles.mapContainer}>
+          <Map
+            defaultState={mapData}
+            className={styles.map}
+            instanceRef={(ref) => {
+              ref && ref.behaviors.disable("scrollZoom");
+            }}
+          >
+            {coordinates.map((coordinate, id) => (
+              <Placemark
+                key={coordinate}
+                geometry={coordinate}
+                onClick={() => clickOnMap(coordinate)}
+              />
+            ))}
+          </Map>
+        </div>
+      </YMaps>
+    </>
   );
 }
 

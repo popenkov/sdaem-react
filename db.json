@@ -228,7 +228,6 @@
       "id": 8
     }
   ],
-
   "newsData": [
     {
       "img": "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -299,5 +298,120 @@
       "title": "Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века.",
       "body": "Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, \"consectetur\", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги \"de Finibus Bonorum et Malorum\" (\"О пределах добра и зла\"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", происходит от одной из строк в разделе 1.10.32 Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 \"de Finibus Bonorum et Malorum\" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год."
     }
-  ]
+  ],
+  "adsOnMapData": {
+    "title": "Квартиры Минска на карте",
+    "tags": [
+      {
+        "title": "Недорогие",
+        "href": "/inexpensive"
+      },
+      {
+        "title": "1-комнатные",
+        "href": "/one-room"
+      },
+      {
+        "title": "2-комнатные",
+        "href": "/two-rooms"
+      },
+      {
+        "title": "3-комнатные",
+        "href": "/three-rooms"
+      },
+      {
+        "title": "4-комнатные",
+        "href": "/four-rooms"
+      },
+      {
+        "title": "5-комнатные",
+        "href": "/five-rooms"
+      },
+      {
+        "title": "Заводской р.",
+        "href": "#"
+      },
+      {
+        "title": "Ленинский р.",
+        "href": "#"
+      },
+      {
+        "title": "Московский р.",
+        "href": "#"
+      },
+      {
+        "title": "Партизанский р.",
+        "href": "#"
+      },
+      {
+        "title": "Фрунзенский р.",
+        "href": "#"
+      },
+      {
+        "title": "•••",
+        "href": "#"
+      }
+    ],
+    "ads": [
+      {
+        "id": 1,
+        "gold": true,
+        "title": "4-комн. апартаменты на Грушевке ",
+        "address": "Минск, б-р Мулявина, д. 10",
+        "img": "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "price": "65.00 BYN",
+        "persons": "4 (2+2)",
+        "rooms": 4,
+        "subway": "Грушевка",
+        "area": "р-н  Шабаны",
+        "description": "Большая четырехкомнатная студия! Большая джкакузи на двоих, на теливизоре есть приложение Megogo, YouTube, Smart TV, сможете выбрать фильм по вкусу!) Цена зависит от ...",
+        "moreLink": "#",
+        "coordinates": [55.751574, 37.573856]
+      },
+      {
+        "id": 2,
+        "gold": true,
+        "title": "4-комн. апартаменты на Грушевке ",
+        "address": "Минск, б-р Мулявина, д. 10",
+        "img": "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "price": "65.00 BYN",
+        "persons": "4 (2+2)",
+        "rooms": 4,
+        "subway": "Грушевка",
+        "area": "р-н  Шабаны",
+        "description": "Большая четырехкомнатная студия! Большая джкакузи на двоих, на теливизоре есть приложение Megogo, YouTube, Smart TV, сможете выбрать фильм по вкусу!) Цена зависит от ...",
+        "moreLink": "#",
+        "coordinates": [56.751574, 36.573856]
+      },
+      {
+        "id": 3,
+        "gold": true,
+        "title": "4-комн. апартаменты на Грушевке ",
+        "address": "Минск, б-р Мулявина, д. 10",
+        "img": "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "price": "65.00 BYN",
+        "persons": "4 (2+2)",
+        "rooms": 4,
+        "subway": "Грушевка",
+        "area": "р-н  Шабаны",
+        "description": "Большая четырехкомнатная студия! Большая джкакузи на двоих, на теливизоре есть приложение Megogo, YouTube, Smart TV, сможете выбрать фильм по вкусу!) Цена зависит от ...",
+        "moreLink": "#",
+        "coordinates": [54.751574, 38.573856]
+      },
+      {
+        "id": 4,
+        "gold": true,
+        "title": "4-комн. апартаменты на Грушевке ",
+        "address": "Минск, б-р Мулявина, д. 10",
+        "img": "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "price": "65.00 BYN",
+        "persons": "4 (2+2)",
+        "rooms": 4,
+        "subway": "Грушевка",
+        "area": "р-н  Шабаны",
+        "description": "Большая четырехкомнатная студия! Большая джкакузи на двоих, на теливизоре есть приложение Megogo, YouTube, Smart TV, сможете выбрать фильм по вкусу!) Цена зависит от ...",
+        "moreLink": "#",
+        "coordinates": [55.751574, 38.573856]
+      }
+    ]
+  }
 }
