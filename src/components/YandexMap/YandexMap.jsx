@@ -13,7 +13,11 @@ const coordinates = [
   [57.684758, 39.738521],
 ];
 
-function YandexMap() {
+function YandexMap({ AdsOnMapData }) {
+  console.log("map", AdsOnMapData.ads);
+  /*   const coordinates = AdsOnMapData.ads.map((ad) => {
+    return ad.coordinates;
+  }); */
   const mapRef = useRef(null);
   const [showResults, setShowResults] = useState(false);
 

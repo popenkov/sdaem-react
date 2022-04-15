@@ -38,7 +38,7 @@ function AdsOnMap() {
           <button className={styles.zoomBtn}>-</button>
         </div>
         {showResults ? <AdsOnMapResults AdsOnMapData={AdsOnMap} /> : null}
-        <YandexMap />
+        <YandexMap AdsOnMapData={AdsOnMap} />
       </div>
     </div>
   );
